@@ -12,7 +12,9 @@
 
 ## Features
 
-The module features
+Shared module for using TypeScript in Nuxt 2+
+
+With just having this module, can use `<script lang="ts">`, TypeScript files for `store/`, `middleware/`.
 
 ## Setup
 
@@ -24,16 +26,15 @@ The module features
   modules: [
     // Simple usage
     'nuxt-ts',
-
-    // With options
-    ['nuxt-ts', { /* module options */ }],
  ]
 }
 ```
 
-## Usage
+## ToDo
 
-Shared module for using TypeScript in Nuxt 2+
+- Be tsconfig free
+- Support tsx?
+- CI with actual samples
 
 ## Development
 
@@ -45,4 +46,4 @@ Shared module for using TypeScript in Nuxt 2+
 
 [MIT License](./LICENSE)
 
-Copyright (c) hmsk <k.hamasaki@gmail.com>
+Copyright (c) Kengo Hamasaki / hmsk <k.hamasaki@gmail.com>
