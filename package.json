@@ -17,7 +17,7 @@
     "dev": "nuxt test/fixture",
     "lint": "eslint lib test",
     "test": "npm run lint && jest",
-    "release": "standard-version && git push --follow-tags && npm publish"
+    "release": "standard-version && git push origin master --follow-tags && npm publish"
   },
   "eslintIgnore": [
     "lib/templates/*.*"
