@@ -24,15 +24,44 @@ With just having this module, can use `<script lang="ts">`, TypeScript files for
 ```js
 {
   modules: [
-    // Simple usage
     'nuxt-ts',
  ]
 }
 ```
 
+- Have your `tsconfig.json` as you like in project root
+
+### Sample `tsconfig.json` for Nuxt 2
+
+```json
+{
+  "compilerOptions": {
+    "target": "es5",
+      "lib": [
+        "dom",
+        "es2015"
+      ],
+      "module": "es2015",
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "noImplicitAny": false,
+      "noImplicitThis": false,
+      "strictNullChecks": true,
+      "removeComments": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": ".",
+      "allowJs": true,
+      "paths": {
+        "~/*": ["./*"]
+      }
+  }
+}
+
+```
+
 ## ToDo
 
-- Be tsconfig free
 - Support tsx?
 - CI with actual samples
 
