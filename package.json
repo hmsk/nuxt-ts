@@ -37,7 +37,8 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "ts-loader": "*"
+    "ts-loader": "*",
+    "typescript": "*"
   },
   "devDependencies": {
     "nuxt": "latest",
