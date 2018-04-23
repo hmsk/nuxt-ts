@@ -8,6 +8,12 @@
       "name": "hmsk <k.hamasaki@gmail.com>"
     }
   ],
+  "keywords": [
+    "nuxt",
+    "vue",
+    "typescript",
+    "webpack"
+  ],
   "main": "lib/module.js",
   "repository": "https://github.com/hmsk/nuxt-ts",
   "publishConfig": {
