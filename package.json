@@ -1,6 +1,6 @@
 {
   "name": "nuxt-ts",
-  "version": "0.0.3",
+  "version": "0.1.0-beta.0",
   "description": "TypeScript module for Nuxt 2+",
   "license": "MIT",
   "contributors": [
@@ -23,7 +23,9 @@
     "dev": "nuxt test/fixture",
     "lint": "eslint lib test",
     "test": "npm run lint && jest",
-    "release": "standard-version && git push origin master --follow-tags && npm publish"
+    "release": "standard-version",
+    "release:beta": "standard-version --prerelease beta",
+    "push": "git push origin master --follow-tags"
   },
   "eslintIgnore": [
     "lib/templates/*.*"
