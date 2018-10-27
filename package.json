@@ -41,8 +41,7 @@
     "typescript": "*"
   },
   "devDependencies": {
-    "nuxt": "latest",
-    "codecov": "latest",
+    "codecov": "^3.1.0",
     "eslint": "latest",
     "eslint-config-standard": "latest",
     "eslint-plugin-import": "latest",
@@ -53,6 +52,10 @@
     "eslint-plugin-vue": "latest",
     "jest": "latest",
     "jsdom": "latest",
+    "nuxt": "^2.2.0",
     "standard-version": "latest"
+  },
+  "optionalDependencies": {
+    "fork-ts-checker-webpack-plugin": "^0.4.13"
   }
 }
