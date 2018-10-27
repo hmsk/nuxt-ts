@@ -39,6 +39,12 @@ $ npm i nuxt-ts
 $ npm i typescript ts-loader
 ```
 
+- Install `fork-ts-checker-webpack-plugin` if you'd like to run type check separately. This makes faster your main build of Nuxt and nuxt-ts uses that automatically if installed
+
+```
+$ npm i fork-ts-checker-webpack-plugin
+```
+
 - Have your `tsconfig.json` as you like in project root
 
 ### Sample `tsconfig.json` for Nuxt 2
