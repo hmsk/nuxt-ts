@@ -56,6 +56,8 @@
     "jest": "latest",
     "jsdom": "latest",
     "nuxt": "^2.2.0",
-    "standard-version": "latest"
+    "standard-version": "latest",
+    "ts-loader": "^5.2.2",
+    "typescript": "^3.1.3"
   }
 }
