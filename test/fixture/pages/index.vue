@@ -1,6 +1,6 @@
 <template>
 <div>
-    Works!
+  {{message}}
 </div>
 </template>
 
@@ -8,5 +8,10 @@
 import Vue from "vue";
 
 export default {
+  data () {
+    return {
+      message: "Works!"
+    }
+  }
 }
 </script>
