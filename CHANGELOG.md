@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0-beta.4"></a>
+# [0.1.0-beta.4](https://github.com/hmsk/nuxt-ts/compare/v0.1.0-beta.3...v0.1.0-beta.4) (2018-12-07)
+
+
+
 <a name="0.1.0-beta.3"></a>
 # [0.1.0-beta.3](https://github.com/hmsk/nuxt-ts/compare/v0.1.0-beta.2...v0.1.0-beta.3) (2018-12-07)
 
