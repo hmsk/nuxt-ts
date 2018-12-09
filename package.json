@@ -32,7 +32,8 @@
   ],
   "files": [
     "lib",
-    "tsconfig.nuxt-ts.json"
+    "tsconfig.nuxt-ts.json",
+    "tsconfig.nuxt-ts-as-root.json"
   ],
   "jest": {
     "testEnvironment": "node",
