@@ -15,17 +15,9 @@
     "suppressImplicitAnyIndexErrors": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
-    "baseUrl": "../..",
-    "rootDir": "../..",
+    "baseUrl": ".",
     "paths": {
       "~/*": ["./*"]
     }
-  },
-  "include": [
-    "../../**/*.ts",
-    "../../**/*.vue"
-  ],
-  "exclude": [
-    "../../node_modules"
-  ]
+  }
 }
