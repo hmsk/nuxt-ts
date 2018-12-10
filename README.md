@@ -1,10 +1,6 @@
 # nuxt-ts
 
-[![npm (scoped with tag)](https://img.shields.io/npm/v/nuxt-ts/latest.svg?style=flat-square)](https://npmjs.com/package/nuxt-ts)
-[![npm](https://img.shields.io/npm/dt/nuxt-ts.svg?style=flat-square)](https://npmjs.com/package/nuxt-ts)
-[![CircleCI](https://img.shields.io/circleci/project/github/hmsk/nuxt-ts.svg?style=flat-square)](https://circleci.com/gh/hmsk/nuxt-ts)
-[![Dependencies](https://david-dm.org/hmsk/nuxt-ts/status.svg?style=flat-square)](https://david-dm.org/hmsk/nuxt-ts)
-[![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
+[![](https://img.shields.io/npm/v/nuxt-ts.svg?style=for-the-badge)](https://www.npmjs.com/package/nuxt-ts)
 
 
 Shared module for using TypeScript in Nuxt 2.
