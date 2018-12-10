@@ -1,6 +1,6 @@
 {
   "name": "nuxt-ts",
-  "version": "0.1.0-beta.7",
+  "version": "0.1.0",
   "description": "TypeScript module for Nuxt 2+",
   "license": "MIT",
   "contributors": [
