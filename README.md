@@ -6,9 +6,10 @@
 Shared module for using TypeScript in Nuxt 2.
 Enable your Nuxt project to use TypeScript easier and quicker 🍲
 
-## Enable your Nuxt project to
+## Enable your Nuxt project to:
 
 - Write `<script lang='ts'>`
+  - 🔮 Then you can use `~` like `import OneComponent from "~/components/one-component.vue"`
 - Use TypeScript `.ts` files
 
 ## Installation
