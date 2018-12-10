@@ -28,7 +28,7 @@ $ npm i typescript ts-loader
 
 - Add `nuxt-ts` to `modules` section on `nuxt.config.js`
 
-```json
+```js
 {
   modules: [
     'nuxt-ts',
@@ -38,7 +38,7 @@ $ npm i typescript ts-loader
 
 with options
 
-```json
+```js
 {
   modules: [
     ['nuxt-ts', {
