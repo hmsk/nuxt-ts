@@ -1,31 +1,37 @@
 # nuxt-ts
+
 [![npm (scoped with tag)](https://img.shields.io/npm/v/nuxt-ts/latest.svg?style=flat-square)](https://npmjs.com/package/nuxt-ts)
 [![npm](https://img.shields.io/npm/dt/nuxt-ts.svg?style=flat-square)](https://npmjs.com/package/nuxt-ts)
 [![CircleCI](https://img.shields.io/circleci/project/github/hmsk/nuxt-ts.svg?style=flat-square)](https://circleci.com/gh/hmsk/nuxt-ts)
 [![Dependencies](https://david-dm.org/hmsk/nuxt-ts/status.svg?style=flat-square)](https://david-dm.org/hmsk/nuxt-ts)
 [![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
 
-> TypeScript module for Nuxt 2
-
-[📖 **Release Notes**](./CHANGELOG.md)
-
-## Features
 
 Shared module for using TypeScript in Nuxt 2.
+Enable your Nuxt project to use TypeScript easier and quicker 🍲
 
-With just having this module, can use `<script lang="ts">`, TypeScript files for `store/`, `middleware/`.
+## Enable your Nuxt project to
 
-## Setup to use TypeScript in Nuxt 2
+- Write `<script lang='ts'>`
+- Use TypeScript `.ts` files
 
-- Install `nuxt-ts` to your project
+## Installation
 
-```
+- Install this module `nuxt-ts` to your Nuxt project
+
+```sh
 $ npm i nuxt-ts
 ```
 
-- Add `nuxt-ts` to `modules` section of `nuxt.config.js`
+- Install `typescript`, `ts-loader` too
 
-```js
+```
+$ npm i typescript ts-loader
+```
+
+- Add `nuxt-ts` to `modules` section on `nuxt.config.js`
+
+```json
 {
   modules: [
     'nuxt-ts',
@@ -33,59 +39,56 @@ $ npm i nuxt-ts
 }
 ```
 
-- Install `typescript`, `ts-loader` to your project
-
-```
-$ npm i typescript ts-loader
-```
-
-- Install `fork-ts-checker-webpack-plugin` if you'd like to run type check separately. This makes faster your main build of Nuxt and nuxt-ts uses that automatically if installed
-
-```
-$ npm i fork-ts-checker-webpack-plugin
-```
-
-- Have your `tsconfig.json` as you like in project root
-
-### Sample `tsconfig.json` for Nuxt 2
+with options
 
 ```json
 {
-  "compilerOptions": {
-    "target": "es5",
-      "lib": [
-        "dom",
-        "es2015"
-      ],
-      "module": "es2015",
-      "moduleResolution": "node",
-      "experimentalDecorators": true,
-      "noImplicitAny": false,
-      "noImplicitThis": false,
-      "strictNullChecks": true,
-      "removeComments": true,
-      "suppressImplicitAnyIndexErrors": true,
-      "allowSyntheticDefaultImports": true,
-      "baseUrl": ".",
-      "allowJs": true,
-      "paths": {
-        "~/*": ["./*"]
-      }
-  }
+  modules: [
+    ['nuxt-ts', {
+      forkTsChecker: { workers: 2, memoryLimit: 4096 },
+      tsconfig: path.join(__dirname, 'tsconfig.custom.json')
+    }]
+  ]
 }
-
 ```
+
+### Run type check separately
+
+This may make your main build of Nuxt faster. Install [`fork-ts-checker-webpack-plugin`](https://github.com/Realytics/fork-ts-checker-webpack-plugin). `nuxt-ts` uses automatically if that's installed.
+
+```sh
+$ npm i fork-ts-checker-webpack-plugin
+```
+
+### tsconfig
+
+`nuxt-ts` provides default of tsconfig automatically. So you don't need to have `tsconfig.json` basically. In some cases, you may want to use your own, **have your `tsconfig.json` as you like in project root**. `nuxt-ts` picks that automatically as default. 
+
+#### VSCode
+
+However, VSCode requires `tsconfig.json` on the root of your project [currently](https://github.com/Microsoft/vscode/issues/12463). If you prefer to use the config which `nuxt-ts` provides, just make `tsconfig.json` with:
+
+```json
+{
+  "extends": "./node_modules/nuxt-ts/tsconfig.nuxt-ts.json"
+}
+```
+
+## Options
+
+- `tsconfig: string`
+  - The path for the custom `tsconfig` file
+- `forkTsChecker: { workers: number, memoryLimit: number }`
+  - Settings for ForkTsCheckerPlugin
 
 ## ToDo
 
 - Support tsx?
 - CI with actual samples
 
-## Development
+## Releases
 
-- Clone this repository
-- Install dependencies `npm install`
-- Start development server using `npm run dev`
+[📖 Release Notes](./CHANGELOG.md)
 
 ## License
 
