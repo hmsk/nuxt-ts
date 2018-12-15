@@ -78,6 +78,10 @@ However, VSCode requires `tsconfig.json` on the root of your project [currently]
 - `forkTsChecker: { workers: number, memoryLimit: number }`
   - Settings for ForkTsCheckerPlugin
 
+## Sample Project
+
+This vue-cli template gives a simple ready-made Nuxt2 + TS3 by using `nuxt-ts`: https://github.com/hmsk/nuxt-typescript-template
+
 ## ToDo
 
 - Support tsx?
