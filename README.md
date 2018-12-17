@@ -61,6 +61,16 @@ $ npm i fork-ts-checker-webpack-plugin
 
 `nuxt-ts` provides default of tsconfig automatically. So you don't need to have `tsconfig.json` basically. In some cases, you may want to use your own, **have your `tsconfig.json` as you like in project root**. `nuxt-ts` picks that automatically as default. 
 
+#### "No inputs were found"
+
+If you see unintentioanl error like:
+
+```
+TS18003: No inputs were found in config file 'tsconfig.json'. Specified 'include' paths were '["node_modules/nuxt-ts/../../**/*.ts","node_modules/nuxt-ts/../../**/*.vue"]' and 'exclude' paths were '["node_modules/nuxt-ts/../../node_modules"]'.
+```
+
+Your project doesn't have any `*.ts` nor `*.vue` file. To avoid this, have both `*.ts` and `*.vue` one for each at least. 
+
 #### VSCode
 
 However, VSCode requires `tsconfig.json` on the root of your project [currently](https://github.com/Microsoft/vscode/issues/12463). If you prefer to use the config which `nuxt-ts` provides, just make `tsconfig.json` with:
