@@ -59,7 +59,7 @@
     "jsdom": "latest",
     "nuxt": "^2.3.4",
     "standard-version": "latest",
-    "ts-loader": "^5.3.1",
+    "ts-loader": "^5.3.2",
     "typescript": "^3.2.2"
   }
 }
