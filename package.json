@@ -24,6 +24,7 @@
     "lint": "eslint lib test",
     "test": "npm run lint && jest",
     "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
     "release:beta": "standard-version --prerelease beta",
     "push": "git push origin master --follow-tags"
   },
