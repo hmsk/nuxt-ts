@@ -1,6 +1,9 @@
-# nuxt-ts
+# nuxt-ts@legacy ⚠️ DEPRECATED
 
-[![](https://img.shields.io/npm/v/nuxt-ts.svg?style=for-the-badge)](https://www.npmjs.com/package/nuxt-ts)
+This repository is the source code for the legacy version of `nuxt-ts`.
+The latest `nuxt-ts` is owned by Nuxt core team after v2.4.0.
+
+[![](https://img.shields.io/npm/v/nuxt-ts/legacy.svg?style=for-the-badge)](https://www.npmjs.com/package/nuxt-ts)
 
 
 Shared module for using TypeScript in Nuxt 2.
