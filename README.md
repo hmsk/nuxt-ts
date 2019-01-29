@@ -20,7 +20,7 @@ Enable your Nuxt project to use TypeScript easier and quicker 🍲
 - Install this module `nuxt-ts` to your Nuxt project
 
 ```sh
-$ npm i nuxt-ts
+$ npm i nuxt-ts@legacy
 ```
 
 - Install `typescript`, `ts-loader` too
